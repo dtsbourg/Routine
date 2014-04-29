@@ -21,6 +21,31 @@
 		FC570EE2190EE2C900519802 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC570EC4190EE2C900519802 /* UIKit.framework */; };
 		FC570EEA190EE2C900519802 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FC570EE8190EE2C900519802 /* InfoPlist.strings */; };
 		FC570EEC190EE2C900519802 /* RoutineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC570EEB190EE2C900519802 /* RoutineTests.m */; };
+		FC570EF6190EE2D300519802 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC570EF5190EE2D200519802 /* Parse.framework */; };
+		FC570F00190EE32300519802 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC570EF7190EE32300519802 /* AudioToolbox.framework */; };
+		FC570F01190EE32300519802 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC570EF8190EE32300519802 /* CFNetwork.framework */; };
+		FC570F02190EE32300519802 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC570EF9190EE32300519802 /* CoreLocation.framework */; };
+		FC570F03190EE32300519802 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FC570EFA190EE32300519802 /* libz.dylib */; };
+		FC570F04190EE32300519802 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC570EFB190EE32300519802 /* MobileCoreServices.framework */; };
+		FC570F05190EE32300519802 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC570EFC190EE32300519802 /* QuartzCore.framework */; };
+		FC570F06190EE32300519802 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC570EFD190EE32300519802 /* Security.framework */; };
+		FC570F07190EE32300519802 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC570EFE190EE32300519802 /* StoreKit.framework */; };
+		FC570F08190EE32300519802 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC570EFF190EE32300519802 /* SystemConfiguration.framework */; };
+		FC570F12190EE37800519802 /* lake copy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FC570F09190EE37800519802 /* lake copy.jpg */; };
+		FC570F13190EE37800519802 /* icon-ios7-heart.png in Resources */ = {isa = PBXBuildFile; fileRef = FC570F0A190EE37800519802 /* icon-ios7-heart.png */; };
+		FC570F14190EE37800519802 /* icon-ios7-drag.png in Resources */ = {isa = PBXBuildFile; fileRef = FC570F0B190EE37800519802 /* icon-ios7-drag.png */; };
+		FC570F15190EE37800519802 /* Logos-Soundcloud-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FC570F0C190EE37800519802 /* Logos-Soundcloud-icon.png */; };
+		FC570F16190EE37800519802 /* icon-social-facebook-outline.png in Resources */ = {isa = PBXBuildFile; fileRef = FC570F0D190EE37800519802 /* icon-social-facebook-outline.png */; };
+		FC570F17190EE37800519802 /* icon-social-facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = FC570F0E190EE37800519802 /* icon-social-facebook.png */; };
+		FC570F18190EE37800519802 /* icon-social-tumblr.png in Resources */ = {isa = PBXBuildFile; fileRef = FC570F0F190EE37800519802 /* icon-social-tumblr.png */; };
+		FC570F19190EE37800519802 /* icon-social-twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = FC570F10190EE37800519802 /* icon-social-twitter.png */; };
+		FC570F1A190EE37800519802 /* wankelmut_benwolf1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FC570F11190EE37800519802 /* wankelmut_benwolf1.jpg */; };
+		FC570F20190EE3BC00519802 /* MSSlidingPanelController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC570F1D190EE3BC00519802 /* MSSlidingPanelController.m */; };
+		FC570F21190EE3BC00519802 /* MSViewControllerSlidingPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = FC570F1F190EE3BC00519802 /* MSViewControllerSlidingPanel.m */; };
+		FC570F24190EE3D000519802 /* EmptySegue.m in Sources */ = {isa = PBXBuildFile; fileRef = FC570F23190EE3D000519802 /* EmptySegue.m */; };
+		FC570F29190EE41400519802 /* SavedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC570F26190EE41400519802 /* SavedTableViewController.m */; };
+		FC570F2A190EE41400519802 /* ArtistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC570F28190EE41400519802 /* ArtistViewController.m */; };
+		FC570F3219102CA400519802 /* VALabel.m in Sources */ = {isa = PBXBuildFile; fileRef = FC570F3119102CA400519802 /* VALabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +78,37 @@
 		FC570EE7190EE2C900519802 /* RoutineTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RoutineTests-Info.plist"; sourceTree = "<group>"; };
 		FC570EE9190EE2C900519802 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FC570EEB190EE2C900519802 /* RoutineTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RoutineTests.m; sourceTree = "<group>"; };
+		FC570EF5190EE2D200519802 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		FC570EF7190EE32300519802 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		FC570EF8190EE32300519802 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		FC570EF9190EE32300519802 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		FC570EFA190EE32300519802 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		FC570EFB190EE32300519802 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		FC570EFC190EE32300519802 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		FC570EFD190EE32300519802 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		FC570EFE190EE32300519802 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		FC570EFF190EE32300519802 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		FC570F09190EE37800519802 /* lake copy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "lake copy.jpg"; sourceTree = "<group>"; };
+		FC570F0A190EE37800519802 /* icon-ios7-heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-ios7-heart.png"; sourceTree = "<group>"; };
+		FC570F0B190EE37800519802 /* icon-ios7-drag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-ios7-drag.png"; sourceTree = "<group>"; };
+		FC570F0C190EE37800519802 /* Logos-Soundcloud-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Logos-Soundcloud-icon.png"; sourceTree = "<group>"; };
+		FC570F0D190EE37800519802 /* icon-social-facebook-outline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-social-facebook-outline.png"; sourceTree = "<group>"; };
+		FC570F0E190EE37800519802 /* icon-social-facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-social-facebook.png"; sourceTree = "<group>"; };
+		FC570F0F190EE37800519802 /* icon-social-tumblr.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-social-tumblr.png"; sourceTree = "<group>"; };
+		FC570F10190EE37800519802 /* icon-social-twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-social-twitter.png"; sourceTree = "<group>"; };
+		FC570F11190EE37800519802 /* wankelmut_benwolf1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wankelmut_benwolf1.jpg; sourceTree = "<group>"; };
+		FC570F1C190EE3BC00519802 /* MSSlidingPanelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSSlidingPanelController.h; sourceTree = "<group>"; };
+		FC570F1D190EE3BC00519802 /* MSSlidingPanelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSSlidingPanelController.m; sourceTree = "<group>"; };
+		FC570F1E190EE3BC00519802 /* MSViewControllerSlidingPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSViewControllerSlidingPanel.h; sourceTree = "<group>"; };
+		FC570F1F190EE3BC00519802 /* MSViewControllerSlidingPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSViewControllerSlidingPanel.m; sourceTree = "<group>"; };
+		FC570F22190EE3D000519802 /* EmptySegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmptySegue.h; sourceTree = "<group>"; };
+		FC570F23190EE3D000519802 /* EmptySegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmptySegue.m; sourceTree = "<group>"; };
+		FC570F25190EE41400519802 /* SavedTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SavedTableViewController.h; path = MSSlidingPanelController/SavedTableViewController.h; sourceTree = "<group>"; };
+		FC570F26190EE41400519802 /* SavedTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SavedTableViewController.m; path = MSSlidingPanelController/SavedTableViewController.m; sourceTree = "<group>"; };
+		FC570F27190EE41400519802 /* ArtistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ArtistViewController.h; path = MSSlidingPanelController/ArtistViewController.h; sourceTree = "<group>"; };
+		FC570F28190EE41400519802 /* ArtistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ArtistViewController.m; path = MSSlidingPanelController/ArtistViewController.m; sourceTree = "<group>"; };
+		FC570F3019102CA400519802 /* VALabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VALabel.h; sourceTree = "<group>"; };
+		FC570F3119102CA400519802 /* VALabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VALabel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +116,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC570F00190EE32300519802 /* AudioToolbox.framework in Frameworks */,
+				FC570F01190EE32300519802 /* CFNetwork.framework in Frameworks */,
+				FC570F02190EE32300519802 /* CoreLocation.framework in Frameworks */,
+				FC570F03190EE32300519802 /* libz.dylib in Frameworks */,
+				FC570F04190EE32300519802 /* MobileCoreServices.framework in Frameworks */,
+				FC570F05190EE32300519802 /* QuartzCore.framework in Frameworks */,
+				FC570F06190EE32300519802 /* Security.framework in Frameworks */,
+				FC570F07190EE32300519802 /* StoreKit.framework in Frameworks */,
+				FC570F08190EE32300519802 /* SystemConfiguration.framework in Frameworks */,
 				FC570EC3190EE2C900519802 /* CoreGraphics.framework in Frameworks */,
 				FC570EC5190EE2C900519802 /* UIKit.framework in Frameworks */,
+				FC570EF6190EE2D300519802 /* Parse.framework in Frameworks */,
 				FC570EC1190EE2C900519802 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -101,6 +167,16 @@
 		FC570EBF190EE2C900519802 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FC570EF7190EE32300519802 /* AudioToolbox.framework */,
+				FC570EF8190EE32300519802 /* CFNetwork.framework */,
+				FC570EF9190EE32300519802 /* CoreLocation.framework */,
+				FC570EFA190EE32300519802 /* libz.dylib */,
+				FC570EFB190EE32300519802 /* MobileCoreServices.framework */,
+				FC570EFC190EE32300519802 /* QuartzCore.framework */,
+				FC570EFD190EE32300519802 /* Security.framework */,
+				FC570EFE190EE32300519802 /* StoreKit.framework */,
+				FC570EFF190EE32300519802 /* SystemConfiguration.framework */,
+				FC570EF5190EE2D200519802 /* Parse.framework */,
 				FC570EC0190EE2C900519802 /* Foundation.framework */,
 				FC570EC2190EE2C900519802 /* CoreGraphics.framework */,
 				FC570EC4190EE2C900519802 /* UIKit.framework */,
@@ -112,9 +188,16 @@
 		FC570EC6190EE2C900519802 /* Routine */ = {
 			isa = PBXGroup;
 			children = (
+				FC570F3019102CA400519802 /* VALabel.h */,
+				FC570F3119102CA400519802 /* VALabel.m */,
+				FC570F1B190EE3BC00519802 /* MSSlidingPanelController */,
+				FC570ED2190EE2C900519802 /* Main.storyboard */,
+				FC570F25190EE41400519802 /* SavedTableViewController.h */,
+				FC570F26190EE41400519802 /* SavedTableViewController.m */,
 				FC570ECF190EE2C900519802 /* AppDelegate.h */,
 				FC570ED0190EE2C900519802 /* AppDelegate.m */,
-				FC570ED2190EE2C900519802 /* Main.storyboard */,
+				FC570F27190EE41400519802 /* ArtistViewController.h */,
+				FC570F28190EE41400519802 /* ArtistViewController.m */,
 				FC570ED5190EE2C900519802 /* ViewController.h */,
 				FC570ED6190EE2C900519802 /* ViewController.m */,
 				FC570ED8190EE2C900519802 /* Images.xcassets */,
@@ -126,6 +209,15 @@
 		FC570EC7190EE2C900519802 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FC570F09190EE37800519802 /* lake copy.jpg */,
+				FC570F0A190EE37800519802 /* icon-ios7-heart.png */,
+				FC570F0B190EE37800519802 /* icon-ios7-drag.png */,
+				FC570F0C190EE37800519802 /* Logos-Soundcloud-icon.png */,
+				FC570F0D190EE37800519802 /* icon-social-facebook-outline.png */,
+				FC570F0E190EE37800519802 /* icon-social-facebook.png */,
+				FC570F0F190EE37800519802 /* icon-social-tumblr.png */,
+				FC570F10190EE37800519802 /* icon-social-twitter.png */,
+				FC570F11190EE37800519802 /* wankelmut_benwolf1.jpg */,
 				FC570EC8190EE2C900519802 /* Routine-Info.plist */,
 				FC570EC9190EE2C900519802 /* InfoPlist.strings */,
 				FC570ECC190EE2C900519802 /* main.m */,
@@ -150,6 +242,19 @@
 				FC570EE8190EE2C900519802 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FC570F1B190EE3BC00519802 /* MSSlidingPanelController */ = {
+			isa = PBXGroup;
+			children = (
+				FC570F22190EE3D000519802 /* EmptySegue.h */,
+				FC570F23190EE3D000519802 /* EmptySegue.m */,
+				FC570F1C190EE3BC00519802 /* MSSlidingPanelController.h */,
+				FC570F1D190EE3BC00519802 /* MSSlidingPanelController.m */,
+				FC570F1E190EE3BC00519802 /* MSViewControllerSlidingPanel.h */,
+				FC570F1F190EE3BC00519802 /* MSViewControllerSlidingPanel.m */,
+			);
+			path = MSSlidingPanelController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,7 +333,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC570F16190EE37800519802 /* icon-social-facebook-outline.png in Resources */,
+				FC570F19190EE37800519802 /* icon-social-twitter.png in Resources */,
+				FC570F13190EE37800519802 /* icon-ios7-heart.png in Resources */,
+				FC570F12190EE37800519802 /* lake copy.jpg in Resources */,
+				FC570F18190EE37800519802 /* icon-social-tumblr.png in Resources */,
+				FC570F17190EE37800519802 /* icon-social-facebook.png in Resources */,
+				FC570F1A190EE37800519802 /* wankelmut_benwolf1.jpg in Resources */,
+				FC570F14190EE37800519802 /* icon-ios7-drag.png in Resources */,
 				FC570ED9190EE2C900519802 /* Images.xcassets in Resources */,
+				FC570F15190EE37800519802 /* Logos-Soundcloud-icon.png in Resources */,
 				FC570ECB190EE2C900519802 /* InfoPlist.strings in Resources */,
 				FC570ED4190EE2C900519802 /* Main.storyboard in Resources */,
 			);
@@ -249,9 +363,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC570F3219102CA400519802 /* VALabel.m in Sources */,
 				FC570ED7190EE2C900519802 /* ViewController.m in Sources */,
 				FC570ED1190EE2C900519802 /* AppDelegate.m in Sources */,
 				FC570ECD190EE2C900519802 /* main.m in Sources */,
+				FC570F24190EE3D000519802 /* EmptySegue.m in Sources */,
+				FC570F21190EE3BC00519802 /* MSViewControllerSlidingPanel.m in Sources */,
+				FC570F29190EE41400519802 /* SavedTableViewController.m in Sources */,
+				FC570F20190EE3BC00519802 /* MSSlidingPanelController.m in Sources */,
+				FC570F2A190EE41400519802 /* ArtistViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,6 +496,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Routine/Routine-Prefix.pch";
 				INFOPLIST_FILE = "Routine/Routine-Info.plist";
@@ -389,6 +513,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Routine/Routine-Prefix.pch";
 				INFOPLIST_FILE = "Routine/Routine-Info.plist";
@@ -456,6 +584,7 @@
 				FC570EF1190EE2C900519802 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FC570EF2190EE2C900519802 /* Build configuration list for PBXNativeTarget "RoutineTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +593,7 @@
 				FC570EF4190EE2C900519802 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
