@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>57FBA71E-C764-4D4C-BAC7-174889C59597</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Routine</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>9BC5653A-6613-44A2-903D-C7F441D2DF14</key>
+		<string>https://github.com/dtsbourg/Routine</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Routine.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>9BC5653A-6613-44A2-903D-C7F441D2DF14</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/dtsbourg/Routine</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>9BC5653A-6613-44A2-903D-C7F441D2DF14</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>9BC5653A-6613-44A2-903D-C7F441D2DF14</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Routine</string>
+		</dict>
+	</array>
+</dict>
+</plist>
