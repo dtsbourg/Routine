@@ -54,8 +54,6 @@
         
         /****** Get artist text ******/
         artistText = obj[@"artistText"];
-        NSLog(@"%@", artistText);
-
         
     }];
     
