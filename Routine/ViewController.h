@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
 
+
 @interface ViewController : UIViewController
 @property (strong, nonatomic) IBOutlet UILabel *titleLabel;
 @property (strong, nonatomic) IBOutlet UILabel *artistLabel;
@@ -19,6 +20,7 @@
 @property (strong, nonatomic) IBOutlet UIButton *playButton;
 @property (strong, nonatomic) AVAudioPlayer* player;
 @property (strong, nonatomic) NSTimer *timer;
+
 
 /* Arg to pass to artist modal view */
 @property (strong, nonatomic) UIImage *artistImg;

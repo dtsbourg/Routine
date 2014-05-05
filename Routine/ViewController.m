@@ -77,6 +77,12 @@
 {
     if (liked == NULL)
     liked = (NSMutableArray*)[[NSMutableArray alloc] initWithArray:[[[NSUserDefaults standardUserDefaults] objectForKey:@"liked"] mutableCopy] ];
+    
+    else if([liked containsObject:@[self.titleLabel.text, self.artistLabel.text]])
+    {
+        [self.likeButton setImage:[UIImage imageNamed:@"liked.png" ] forState:UIControlStateNormal];
+    }
+
 }
 
 - (void)onTimerTick:(id)sender {
@@ -86,12 +92,12 @@
     
     NSTimeInterval totalTime = [self.player duration];
     NSTimeInterval currentTime = [self.player currentTime];
-    CGFloat progress = currentTime / totalTime;
-    [self.progressView setProgress:progress];
+    _progress = currentTime / totalTime;
+    [self.progressView setProgress:_progress];
 }
 
 -(IBAction)playSong {
-
+ 
     if ([self.player isPlaying]) {
         [self.player pause];
         [self.playButton setImage:[UIImage imageNamed:@"play.png"] forState:UIControlStateNormal];
@@ -140,7 +146,6 @@
 
 -(IBAction)liked:(id)sender
 {
-    //check if previous like
     if(![liked containsObject:@[self.titleLabel.text, self.artistLabel.text]])
     {
         [liked addObject:@[self.titleLabel.text, self.artistLabel.text]];
@@ -159,4 +164,5 @@
     }
     
 }
+
 @end

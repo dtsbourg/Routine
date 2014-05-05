@@ -17,7 +17,6 @@
 @property (strong, nonatomic) IBOutlet UIButton *twitterButton;
 @property (strong, nonatomic) IBOutlet UIImageView *artistImageView;
 
-
 @property (strong, nonatomic) IBOutlet UIButton *dismissButton;
 
 @property (strong, nonatomic) NSString *detailText;

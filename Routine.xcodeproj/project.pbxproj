@@ -58,6 +58,7 @@
 		FC8B75181916C88000FABEBC /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = FC8B75171916C88000FABEBC /* pause.png */; };
 		FC8B751A1916CD6900FABEBC /* liked.png in Resources */ = {isa = PBXBuildFile; fileRef = FC8B75191916CD6900FABEBC /* liked.png */; };
 		FC8B751D1916D32300FABEBC /* TWRProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8B751C1916D32300FABEBC /* TWRProgressView.m */; };
+		FC8B75311917FAB900FABEBC /* pause90.png in Resources */ = {isa = PBXBuildFile; fileRef = FC8B75301917FAB900FABEBC /* pause90.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -133,6 +134,7 @@
 		FC8B75191916CD6900FABEBC /* liked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = liked.png; sourceTree = "<group>"; };
 		FC8B751B1916D32300FABEBC /* TWRProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWRProgressView.h; sourceTree = "<group>"; };
 		FC8B751C1916D32300FABEBC /* TWRProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWRProgressView.m; sourceTree = "<group>"; };
+		FC8B75301917FAB900FABEBC /* pause90.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause90.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,6 +234,7 @@
 		FC570EC7190EE2C900519802 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FC8B75301917FAB900FABEBC /* pause90.png */,
 				FC8B75191916CD6900FABEBC /* liked.png */,
 				FC8B75171916C88000FABEBC /* pause.png */,
 				FC8B750E1916C0F100FABEBC /* code */,
@@ -401,6 +404,7 @@
 				FC570F1A190EE37800519802 /* wankelmut_benwolf1.jpg in Resources */,
 				FC8B75071916AAD500FABEBC /* heart.png in Resources */,
 				FC8B75051916AA1600FABEBC /* play.png in Resources */,
+				FC8B75311917FAB900FABEBC /* pause90.png in Resources */,
 				FC570F14190EE37800519802 /* icon-ios7-drag.png in Resources */,
 				FC570ED9190EE2C900519802 /* Images.xcassets in Resources */,
 				FC8B75151916C0F100FABEBC /* Full Version from here.txt in Resources */,
