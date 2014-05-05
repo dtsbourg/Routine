@@ -7,12 +7,11 @@
 //
 
 #import "ViewController.h"
-#import "VALabel.h"
 
 
 @interface ArtistViewController : ViewController
 @property (strong, nonatomic) IBOutlet UILabel *artistLabel;
-@property (strong, nonatomic) IBOutlet VALabel *detailLabel;
+@property (strong, nonatomic) IBOutlet UILabel *detailLabel;
 @property (strong, nonatomic) IBOutlet UIButton *facebookButton;
 @property (strong, nonatomic) IBOutlet UIButton *soundcloudButton;
 @property (strong, nonatomic) IBOutlet UIButton *twitterButton;

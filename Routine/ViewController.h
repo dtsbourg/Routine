@@ -8,14 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
-#import "VALabel.h"
 
 @interface ViewController : UIViewController
-@property (strong, nonatomic) IBOutlet VALabel *titleLabel;
+@property (strong, nonatomic) IBOutlet UILabel *titleLabel;
 @property (strong, nonatomic) IBOutlet UILabel *artistLabel;
-@property (strong, nonatomic) IBOutlet UIProgressView *progressView;
+@property (strong, nonatomic) IBOutlet UILabel *likeLabel;
 @property (strong, nonatomic) IBOutlet UIButton *likeButton;
-@property (strong, nonatomic) IBOutlet UIImageView *bgImageView;
+
 
 @property (strong, nonatomic) IBOutlet UIButton *playButton;
 @property (strong, nonatomic) AVAudioPlayer* player;

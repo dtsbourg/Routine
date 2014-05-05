@@ -9,6 +9,9 @@
 #import "SavedTableViewController.h"
 
 @interface SavedTableViewController ()
+{
+    NSArray*liked;
+}
 
 @end
 
@@ -26,12 +29,22 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+    self.titleLabel.font = [UIFont fontWithName:@"CODE-Light" size:50];
+
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+}
+
+-(void)viewDidAppear:(BOOL)animated
+{
+    if (liked ==NULL)
+    liked = [[NSArray alloc] initWithArray:(NSArray*)[[NSUserDefaults standardUserDefaults] objectForKey:@"liked"]];
+    else liked =[[NSUserDefaults standardUserDefaults] objectForKey:@"liked"];
+    [self.tableView reloadData];
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -51,7 +64,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return 1;
+    return [liked count];
 }
 
 
@@ -60,9 +73,11 @@
     tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     
-    cell.textLabel.text = @"Perfect times";
-    cell.detailTextLabel.text = @"Booka Shade";
-    
+    cell.textLabel.font = [UIFont fontWithName:@"CODE-Bold" size:18];
+    cell.textLabel.text = liked[indexPath.row][0];
+    cell.detailTextLabel.text = liked[indexPath.row][1];
+    cell.detailTextLabel.font = [UIFont fontWithName:@"CODE-Light" size:12];
+
     return cell;
 }
 
