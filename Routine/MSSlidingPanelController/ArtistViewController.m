@@ -7,6 +7,7 @@
 //
 
 #import "ArtistViewController.h"
+#import <Social/Social.h>
 
 @interface ArtistViewController ()
 
@@ -49,6 +50,24 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
+-(IBAction)shareToFacebook:(id)sender
+{
+    if([SLComposeViewController isAvailableForServiceType:SLServiceTypeFacebook])
+    {
+        SLComposeViewController* fbSheet = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeFacebook];
+        [fbSheet setInitialText:@"Check out this awesome song I discovered on Routine :"];
+        [self presentViewController:fbSheet animated:YES completion:nil];
+    }
+}
 
+-(IBAction)shareToTwitter:(id)sender
+{
+    if ([SLComposeViewController isAvailableForServiceType:SLServiceTypeTwitter])
+    {
+        SLComposeViewController* tweetsheet= [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter];
+        [tweetsheet setInitialText:@"Check this awesome song I discovered on @routineapp: "];
+        [self presentViewController:tweetsheet animated:YES completion:nil];
+    }
+}
 
 @end

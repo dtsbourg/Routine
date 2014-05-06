@@ -171,6 +171,9 @@
                                     <color key="titleColor" red="0.29019607843137252" green="0.56470588235294117" blue="0.88627450980392153" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="shareToFacebook:" destination="E2i-Zv-RNR" eventType="touchUpInside" id="PMG-m4-h6g"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lVr-M7-m0L">
                                 <rect key="frame" x="140" y="492" width="40" height="30"/>
@@ -180,6 +183,9 @@
                                     <color key="titleColor" red="0.0" green="0.90588235294117647" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="shareToTwitter:" destination="E2i-Zv-RNR" eventType="touchUpInside" id="0Wo-e8-h4I"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pOM-nz-hhM">
                                 <rect key="frame" x="243" y="492" width="37" height="30"/>

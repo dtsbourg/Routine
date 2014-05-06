@@ -22,5 +22,6 @@
 @property (strong, nonatomic) NSString *detailText;
 @property (strong, nonatomic) UIImage *artistImage;
 
+@property (strong, nonatomic) NSString* url;
 
 @end

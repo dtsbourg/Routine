@@ -141,6 +141,7 @@
         destvc.artistLabel.text = [self.artistLabel.text uppercaseString];
         destvc.artistImage = self.artistImg;
         destvc.detailText = artistText;
+        // ==== add url for posts ====
     }
 }
 
