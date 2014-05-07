@@ -21,8 +21,4 @@
 @property (strong, nonatomic) AVAudioPlayer* player;
 @property (strong, nonatomic) NSTimer *timer;
 
-
-/* Arg to pass to artist modal view */
-@property (strong, nonatomic) UIImage *artistImg;
-
 @end

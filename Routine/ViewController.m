@@ -17,6 +17,9 @@
     float _progress;
     NSMutableArray *liked;
 }
+/* Arg to pass to artist modal view */
+@property (strong, nonatomic) UIImage *artistImg;
+@property (strong, nonatomic) NSString *urlString;
     
 @property (weak, nonatomic) IBOutlet TWRProgressView *progressView;
 
@@ -27,9 +30,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-//    NSString *appDomain = [[NSBundle mainBundle] bundleIdentifier];
-//    [[NSUserDefaults standardUserDefaults] removePersistentDomainForName:appDomain];
     
     self.titleLabel.font = [UIFont fontWithName:@"CODE-Bold" size:104];
     self.artistLabel.font = [UIFont fontWithName:@"CODE-light" size:22];
@@ -59,13 +59,15 @@
         PFFile*artistImage = obj[@"artistImage"];
         [artistImage getDataInBackgroundWithBlock:^(NSData *imageData, NSError *error) {
             if (!error) {
-                self.artistImg = [UIImage imageWithData:imageData];
+                _artistImg = [UIImage imageWithData:imageData];
             }
             else NSLog(@"%@", [error localizedDescription]);}];
         
         /****** Get artist text ******/
         artistText = obj[@"artistText"];
         
+        /****** Get track url ******/
+        _urlString = obj[@"url"];
     }];
     
      [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(onTimerTick:) userInfo:nil repeats:YES];
@@ -106,7 +108,7 @@
     else {
         if (self.player == nil) {
             
-            NSURL *url   = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/137851436/stream?client_id=81bd906c1a1de7e015331c6942633a48"];
+            NSURL *url   = [NSURL URLWithString:_urlString];
 
             NSData *data = [[NSData alloc] initWithContentsOfURL:url];
             NSError *error;
@@ -139,9 +141,9 @@
     {
         ArtistViewController *destvc = [segue destinationViewController];
         destvc.artistLabel.text = [self.artistLabel.text uppercaseString];
-        destvc.artistImage = self.artistImg;
+        destvc.artistImage = _artistImg;
         destvc.detailText = artistText;
-        // ==== add url for posts ====
+        destvc.urlString = _urlString;
     }
 }
 

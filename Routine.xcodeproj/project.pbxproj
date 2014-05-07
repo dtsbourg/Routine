@@ -53,8 +53,6 @@
 		FC8B750D1916AD8E00FABEBC /* wklmt.png in Resources */ = {isa = PBXBuildFile; fileRef = FC8B750C1916AD8E00FABEBC /* wklmt.png */; };
 		FC8B75131916C0F100FABEBC /* CODE Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = FC8B750F1916C0F100FABEBC /* CODE Bold.otf */; };
 		FC8B75141916C0F100FABEBC /* CODE Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = FC8B75101916C0F100FABEBC /* CODE Light.otf */; };
-		FC8B75151916C0F100FABEBC /* Full Version from here.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC8B75111916C0F100FABEBC /* Full Version from here.txt */; };
-		FC8B75161916C0F100FABEBC /* Intro Specimen.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FC8B75121916C0F100FABEBC /* Intro Specimen.pdf */; };
 		FC8B75181916C88000FABEBC /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = FC8B75171916C88000FABEBC /* pause.png */; };
 		FC8B751A1916CD6900FABEBC /* liked.png in Resources */ = {isa = PBXBuildFile; fileRef = FC8B75191916CD6900FABEBC /* liked.png */; };
 		FC8B751D1916D32300FABEBC /* TWRProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8B751C1916D32300FABEBC /* TWRProgressView.m */; };
@@ -128,8 +126,6 @@
 		FC8B750C1916AD8E00FABEBC /* wklmt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wklmt.png; sourceTree = "<group>"; };
 		FC8B750F1916C0F100FABEBC /* CODE Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CODE Bold.otf"; sourceTree = "<group>"; };
 		FC8B75101916C0F100FABEBC /* CODE Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CODE Light.otf"; sourceTree = "<group>"; };
-		FC8B75111916C0F100FABEBC /* Full Version from here.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Full Version from here.txt"; sourceTree = "<group>"; };
-		FC8B75121916C0F100FABEBC /* Intro Specimen.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Intro Specimen.pdf"; sourceTree = "<group>"; };
 		FC8B75171916C88000FABEBC /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pause.png; path = code/pause.png; sourceTree = "<group>"; };
 		FC8B75191916CD6900FABEBC /* liked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = liked.png; sourceTree = "<group>"; };
 		FC8B751B1916D32300FABEBC /* TWRProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWRProgressView.h; sourceTree = "<group>"; };
@@ -297,8 +293,6 @@
 			children = (
 				FC8B750F1916C0F100FABEBC /* CODE Bold.otf */,
 				FC8B75101916C0F100FABEBC /* CODE Light.otf */,
-				FC8B75111916C0F100FABEBC /* Full Version from here.txt */,
-				FC8B75121916C0F100FABEBC /* Intro Specimen.pdf */,
 			);
 			path = code;
 			sourceTree = "<group>";
@@ -392,7 +386,6 @@
 				FC8B750B1916AC6300FABEBC /* plus.png in Resources */,
 				FC570F16190EE37800519802 /* icon-social-facebook-outline.png in Resources */,
 				FC570F19190EE37800519802 /* icon-social-twitter.png in Resources */,
-				FC8B75161916C0F100FABEBC /* Intro Specimen.pdf in Resources */,
 				FC8B751A1916CD6900FABEBC /* liked.png in Resources */,
 				FC8B75141916C0F100FABEBC /* CODE Light.otf in Resources */,
 				FC570F13190EE37800519802 /* icon-ios7-heart.png in Resources */,
@@ -407,7 +400,6 @@
 				FC8B75311917FAB900FABEBC /* pause90.png in Resources */,
 				FC570F14190EE37800519802 /* icon-ios7-drag.png in Resources */,
 				FC570ED9190EE2C900519802 /* Images.xcassets in Resources */,
-				FC8B75151916C0F100FABEBC /* Full Version from here.txt in Resources */,
 				FC8B750D1916AD8E00FABEBC /* wklmt.png in Resources */,
 				FC570F15190EE37800519802 /* Logos-Soundcloud-icon.png in Resources */,
 				FC8B75031916A97F00FABEBC /* Slice 1.png in Resources */,

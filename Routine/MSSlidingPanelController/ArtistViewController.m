@@ -55,7 +55,8 @@
     if([SLComposeViewController isAvailableForServiceType:SLServiceTypeFacebook])
     {
         SLComposeViewController* fbSheet = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeFacebook];
-        [fbSheet setInitialText:@"Check out this awesome song I discovered on Routine :"];
+        [fbSheet setInitialText:@"Check out this awesome song I discovered on Routine !"];
+        [fbSheet addURL:[NSURL URLWithString:self.urlString]];
         [self presentViewController:fbSheet animated:YES completion:nil];
     }
 }
@@ -65,7 +66,7 @@
     if ([SLComposeViewController isAvailableForServiceType:SLServiceTypeTwitter])
     {
         SLComposeViewController* tweetsheet= [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter];
-        [tweetsheet setInitialText:@"Check this awesome song I discovered on @routineapp: "];
+        [tweetsheet setInitialText:[NSString stringWithFormat:@"Check this awesome song I discovered on @routineapp: %@", self.urlString]];
         [self presentViewController:tweetsheet animated:YES completion:nil];
     }
 }
