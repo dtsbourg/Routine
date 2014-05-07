@@ -65,7 +65,18 @@
             if (!error) {
                 _artistImg = [UIImage imageWithData:imageData];
             }
-            else NSLog(@"%@", [error localizedDescription]);}];
+            else
+            {
+                NZAlertView *alert = [[NZAlertView alloc] initWithStyle:NZAlertStyleError
+                                                                  title:@"Oops !"
+                                                                message:@"Something went wrong, sorry about that. Please try again."
+                                                               delegate:nil];
+                
+                [alert setTextAlignment:NSTextAlignmentCenter];
+                
+                [alert show];
+            }
+        }];
         
         /****** Get artist text ******/
         artistText = obj[@"artistText"];
@@ -80,6 +91,7 @@
 
 -(void)viewDidAppear:(BOOL)animated
 {
+    /************** Liked ****************/
     if (liked == NULL)
     liked = (NSMutableArray*)[[NSMutableArray alloc] initWithArray:[[[NSUserDefaults standardUserDefaults] objectForKey:@"liked"] mutableCopy] ];
     
@@ -139,7 +151,17 @@
                 [self.player play];
                 [self.playButton setImage:[UIImage imageNamed:@"pause.png"] forState:UIControlStateNormal];
             }
-            else NSLog(@"%@", error);
+            else
+            {
+                NZAlertView *alert = [[NZAlertView alloc] initWithStyle:NZAlertStyleError
+                                                                  title:@"Oops !"
+                                                                message:@"Something went wrong, sorry about that. Please try again."
+                                                               delegate:nil];
+                
+                [alert setTextAlignment:NSTextAlignmentCenter];
+                
+                [alert show];
+            }
 
         }
         else{
@@ -152,7 +174,6 @@
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
