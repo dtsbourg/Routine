@@ -45,6 +45,14 @@
 		FC570F24190EE3D000519802 /* EmptySegue.m in Sources */ = {isa = PBXBuildFile; fileRef = FC570F23190EE3D000519802 /* EmptySegue.m */; };
 		FC570F29190EE41400519802 /* SavedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC570F26190EE41400519802 /* SavedTableViewController.m */; };
 		FC570F2A190EE41400519802 /* ArtistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC570F28190EE41400519802 /* ArtistViewController.m */; };
+		FC5D0693191ABF67005BBB14 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5D0692191ABF67005BBB14 /* Reachability.m */; };
+		FC5D06A8191AC327005BBB14 /* NZAlertViewColor.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5D06A0191AC327005BBB14 /* NZAlertViewColor.m */; };
+		FC5D06A9191AC327005BBB14 /* NZAlertView-Icons.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FC5D06A1191AC327005BBB14 /* NZAlertView-Icons.bundle */; };
+		FC5D06AA191AC327005BBB14 /* NZAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5D06A3191AC327005BBB14 /* NZAlertView.m */; };
+		FC5D06AB191AC327005BBB14 /* NZAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC5D06A7191AC327005BBB14 /* NZAlertView.xib */; };
+		FC5D06B4191AC3D0005BBB14 /* UIImage+Blur.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5D06AE191AC3D0005BBB14 /* UIImage+Blur.m */; };
+		FC5D06B5191AC3D0005BBB14 /* UIImage+ImageWithColor.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5D06B0191AC3D0005BBB14 /* UIImage+ImageWithColor.m */; };
+		FC5D06B6191AC3D0005BBB14 /* UIImage+Screenshot.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5D06B2191AC3D0005BBB14 /* UIImage+Screenshot.m */; };
 		FC8B75031916A97F00FABEBC /* Slice 1.png in Resources */ = {isa = PBXBuildFile; fileRef = FC8B75021916A97F00FABEBC /* Slice 1.png */; };
 		FC8B75051916AA1600FABEBC /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = FC8B75041916AA1600FABEBC /* play.png */; };
 		FC8B75071916AAD500FABEBC /* heart.png in Resources */ = {isa = PBXBuildFile; fileRef = FC8B75061916AAD500FABEBC /* heart.png */; };
@@ -118,6 +126,22 @@
 		FC570F26190EE41400519802 /* SavedTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SavedTableViewController.m; path = MSSlidingPanelController/SavedTableViewController.m; sourceTree = "<group>"; };
 		FC570F27190EE41400519802 /* ArtistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ArtistViewController.h; path = MSSlidingPanelController/ArtistViewController.h; sourceTree = "<group>"; };
 		FC570F28190EE41400519802 /* ArtistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ArtistViewController.m; path = MSSlidingPanelController/ArtistViewController.m; sourceTree = "<group>"; };
+		FC5D0691191ABF67005BBB14 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		FC5D0692191ABF67005BBB14 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		FC5D069F191AC327005BBB14 /* NZAlertViewColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NZAlertViewColor.h; sourceTree = "<group>"; };
+		FC5D06A0191AC327005BBB14 /* NZAlertViewColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NZAlertViewColor.m; sourceTree = "<group>"; };
+		FC5D06A1191AC327005BBB14 /* NZAlertView-Icons.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = "NZAlertView-Icons.bundle"; sourceTree = "<group>"; };
+		FC5D06A2191AC327005BBB14 /* NZAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NZAlertView.h; sourceTree = "<group>"; };
+		FC5D06A3191AC327005BBB14 /* NZAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NZAlertView.m; sourceTree = "<group>"; };
+		FC5D06A5191AC327005BBB14 /* NZAlertViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NZAlertViewDelegate.h; sourceTree = "<group>"; };
+		FC5D06A7191AC327005BBB14 /* NZAlertView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NZAlertView.xib; sourceTree = "<group>"; };
+		FC5D06AD191AC3D0005BBB14 /* UIImage+Blur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Blur.h"; sourceTree = "<group>"; };
+		FC5D06AE191AC3D0005BBB14 /* UIImage+Blur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Blur.m"; sourceTree = "<group>"; };
+		FC5D06AF191AC3D0005BBB14 /* UIImage+ImageWithColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageWithColor.h"; sourceTree = "<group>"; };
+		FC5D06B0191AC3D0005BBB14 /* UIImage+ImageWithColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageWithColor.m"; sourceTree = "<group>"; };
+		FC5D06B1191AC3D0005BBB14 /* UIImage+Screenshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Screenshot.h"; sourceTree = "<group>"; };
+		FC5D06B2191AC3D0005BBB14 /* UIImage+Screenshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Screenshot.m"; sourceTree = "<group>"; };
+		FC5D06B3191AC3D0005BBB14 /* UIImage-Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage-Helpers.h"; sourceTree = "<group>"; };
 		FC8B75021916A97F00FABEBC /* Slice 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Slice 1.png"; sourceTree = "<group>"; };
 		FC8B75041916AA1600FABEBC /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
 		FC8B75061916AAD500FABEBC /* heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart.png; sourceTree = "<group>"; };
@@ -210,6 +234,9 @@
 		FC570EC6190EE2C900519802 /* Routine */ = {
 			isa = PBXGroup;
 			children = (
+				FC5D06AC191AC3D0005BBB14 /* UIImage-Helpers */,
+				FC5D069D191AC327005BBB14 /* NZAlertView */,
+				FC5D0694191ABF70005BBB14 /* Reachability */,
 				FC8B751E1916D32700FABEBC /* TWRProgressView */,
 				FC570F1B190EE3BC00519802 /* MSSlidingPanelController */,
 				FC570ED2190EE2C900519802 /* Main.storyboard */,
@@ -286,6 +313,67 @@
 				FC570F1F190EE3BC00519802 /* MSViewControllerSlidingPanel.m */,
 			);
 			path = MSSlidingPanelController;
+			sourceTree = "<group>";
+		};
+		FC5D0694191ABF70005BBB14 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				FC5D0691191ABF67005BBB14 /* Reachability.h */,
+				FC5D0692191ABF67005BBB14 /* Reachability.m */,
+			);
+			name = Reachability;
+			sourceTree = "<group>";
+		};
+		FC5D069D191AC327005BBB14 /* NZAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				FC5D069E191AC327005BBB14 /* Helpers */,
+				FC5D06A1191AC327005BBB14 /* NZAlertView-Icons.bundle */,
+				FC5D06A2191AC327005BBB14 /* NZAlertView.h */,
+				FC5D06A3191AC327005BBB14 /* NZAlertView.m */,
+				FC5D06A4191AC327005BBB14 /* Protocols */,
+				FC5D06A6191AC327005BBB14 /* Views */,
+			);
+			path = NZAlertView;
+			sourceTree = "<group>";
+		};
+		FC5D069E191AC327005BBB14 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FC5D069F191AC327005BBB14 /* NZAlertViewColor.h */,
+				FC5D06A0191AC327005BBB14 /* NZAlertViewColor.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		FC5D06A4191AC327005BBB14 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				FC5D06A5191AC327005BBB14 /* NZAlertViewDelegate.h */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		FC5D06A6191AC327005BBB14 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FC5D06A7191AC327005BBB14 /* NZAlertView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FC5D06AC191AC3D0005BBB14 /* UIImage-Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FC5D06AD191AC3D0005BBB14 /* UIImage+Blur.h */,
+				FC5D06AE191AC3D0005BBB14 /* UIImage+Blur.m */,
+				FC5D06AF191AC3D0005BBB14 /* UIImage+ImageWithColor.h */,
+				FC5D06B0191AC3D0005BBB14 /* UIImage+ImageWithColor.m */,
+				FC5D06B1191AC3D0005BBB14 /* UIImage+Screenshot.h */,
+				FC5D06B2191AC3D0005BBB14 /* UIImage+Screenshot.m */,
+				FC5D06B3191AC3D0005BBB14 /* UIImage-Helpers.h */,
+			);
+			path = "UIImage-Helpers";
 			sourceTree = "<group>";
 		};
 		FC8B750E1916C0F100FABEBC /* code */ = {
@@ -386,10 +474,12 @@
 				FC8B750B1916AC6300FABEBC /* plus.png in Resources */,
 				FC570F16190EE37800519802 /* icon-social-facebook-outline.png in Resources */,
 				FC570F19190EE37800519802 /* icon-social-twitter.png in Resources */,
+				FC5D06A9191AC327005BBB14 /* NZAlertView-Icons.bundle in Resources */,
 				FC8B751A1916CD6900FABEBC /* liked.png in Resources */,
 				FC8B75141916C0F100FABEBC /* CODE Light.otf in Resources */,
 				FC570F13190EE37800519802 /* icon-ios7-heart.png in Resources */,
 				FC570F12190EE37800519802 /* lake copy.jpg in Resources */,
+				FC5D06AB191AC327005BBB14 /* NZAlertView.xib in Resources */,
 				FC570F18190EE37800519802 /* icon-social-tumblr.png in Resources */,
 				FC8B75181916C88000FABEBC /* pause.png in Resources */,
 				FC570F17190EE37800519802 /* icon-social-facebook.png in Resources */,
@@ -423,11 +513,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC5D06A8191AC327005BBB14 /* NZAlertViewColor.m in Sources */,
 				FC8B751D1916D32300FABEBC /* TWRProgressView.m in Sources */,
 				FC570ED7190EE2C900519802 /* ViewController.m in Sources */,
+				FC5D06B4191AC3D0005BBB14 /* UIImage+Blur.m in Sources */,
 				FC570ED1190EE2C900519802 /* AppDelegate.m in Sources */,
 				FC570ECD190EE2C900519802 /* main.m in Sources */,
+				FC5D0693191ABF67005BBB14 /* Reachability.m in Sources */,
 				FC570F24190EE3D000519802 /* EmptySegue.m in Sources */,
+				FC5D06AA191AC327005BBB14 /* NZAlertView.m in Sources */,
+				FC5D06B5191AC3D0005BBB14 /* UIImage+ImageWithColor.m in Sources */,
+				FC5D06B6191AC3D0005BBB14 /* UIImage+Screenshot.m in Sources */,
 				FC570F21190EE3BC00519802 /* MSViewControllerSlidingPanel.m in Sources */,
 				FC570F29190EE41400519802 /* SavedTableViewController.m in Sources */,
 				FC570F20190EE3BC00519802 /* MSSlidingPanelController.m in Sources */,

@@ -10,6 +10,8 @@
 #import <Parse/Parse.h>
 #import "ArtistViewController.h"
 #import "TWRProgressView.h"
+#import "Reachability.h"
+#import "NZAlertView.h"
 
 @interface ViewController ()
 {
@@ -31,21 +33,23 @@
 {
     [super viewDidLoad];
     
+    /************** Fonts ****************/
     self.titleLabel.font = [UIFont fontWithName:@"CODE-Bold" size:104];
     self.artistLabel.font = [UIFont fontWithName:@"CODE-light" size:22];
     self.likeLabel.font = [UIFont fontWithName:@"CODE-light" size:17];
     
     
+    /************** Progress View ****************/
     UIImage *image = [UIImage imageNamed:@"Slice 1.png"];
     [_progressView setMaskingImage:image];
     [_progressView setBackColor:[UIColor grayColor]];
     [_progressView setFrontColor:[UIColor whiteColor]];
     [_progressView setHorizontal:YES];
-    // Sync initial slider and image starting progress...
     _progress=0.0f;
     [_progressView setProgress:_progress];
 
     
+    /************** Backend ****************/
     PFQuery *q = [PFQuery queryWithClassName:@"Song"];
     [q getFirstObjectInBackgroundWithBlock:^(PFObject *obj, NSError *error) {
         
@@ -71,9 +75,8 @@
     }];
     
      [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(onTimerTick:) userInfo:nil repeats:YES];
-    
-	// Do any additional setup after loading the view, typically from a nib.
 }
+
 
 -(void)viewDidAppear:(BOOL)animated
 {
@@ -84,7 +87,24 @@
     {
         [self.likeButton setImage:[UIImage imageNamed:@"liked.png" ] forState:UIControlStateNormal];
     }
-
+    
+    /************** Reachability ****************/
+    Reachability* reach = [Reachability reachabilityWithHostname:@"www.google.com"];
+    
+    reach.unreachableBlock = ^(Reachability*reach)
+    {
+        NZAlertView *alert = [[NZAlertView alloc] initWithStyle:NZAlertStyleError
+                                                          title:@"No internet connection"
+                                                        message:@"Please connect to the internet to enjoy your Routine !"
+                                                       delegate:nil];
+        
+        [alert setTextAlignment:NSTextAlignmentCenter];
+        
+        [alert show];
+        
+    };
+    
+    [reach startNotifier];
 }
 
 - (void)onTimerTick:(id)sender {
@@ -155,7 +175,7 @@
         [[NSUserDefaults standardUserDefaults] setObject:liked forKey:@"liked"];
         [[NSUserDefaults standardUserDefaults] synchronize];
     
-        [self.likeButton setImage:[UIImage imageNamed:@"liked.png" ] forState:UIControlStateNormal];
+        [self.likeButton setImage:[UIImage imageNamed:@"liked.png"] forState:UIControlStateNormal];
     }
     else
     {
@@ -163,9 +183,10 @@
         [[NSUserDefaults standardUserDefaults] setObject:liked forKey:@"liked"];
         [[NSUserDefaults standardUserDefaults] synchronize];
         
-        [self.likeButton setImage:[UIImage imageNamed:@"heart.png" ] forState:UIControlStateNormal];
+        [self.likeButton setImage:[UIImage imageNamed:@"heart.png"] forState:UIControlStateNormal];
     }
     
 }
+
 
 @end
