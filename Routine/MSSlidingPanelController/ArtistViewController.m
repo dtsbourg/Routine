@@ -28,14 +28,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.detailLabel.font = [UIFont fontWithName:@"CODE-Light" size:30];
-    self.detailLabel.text = self.detailText;
-    self.artistImageView.layer.cornerRadius = 120;
-    self.artistImageView.layer.masksToBounds = YES;
-    self.artistImageView.layer.borderWidth = 3;
-    CGColorRef white = [[UIColor colorWithWhite:1.0 alpha:1] CGColor];
-    self.artistImageView.layer.borderColor = white;
-    self.artistImageView.image = self.artistImage;
+    [self initGraphics];
  
 }
 
@@ -43,6 +36,20 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)initGraphics
+{
+    self.detailLabel.font = [UIFont fontWithName:@"CODE-Light" size:30];
+    self.detailLabel.text = self.detailText;
+    
+    self.artistImageView.layer.cornerRadius = 120;
+    self.artistImageView.layer.masksToBounds = YES;
+    self.artistImageView.layer.borderWidth = 3;
+    
+    CGColorRef white = [[UIColor colorWithWhite:1.0 alpha:1] CGColor];
+    self.artistImageView.layer.borderColor = white;
+    self.artistImageView.image = self.artistImage;
 }
 
 -(IBAction)dismiss:(id)sender

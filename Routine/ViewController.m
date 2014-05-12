@@ -25,6 +25,8 @@
     
 @property (weak, nonatomic) IBOutlet TWRProgressView *progressView;
 
+@property (strong, nonatomic) NSDate* publishDate;
+
 @end
 
 @implementation ViewController
@@ -48,9 +50,17 @@
     _progress=0.0f;
     [_progressView setProgress:_progress];
 
+    [self getSong];
     
+    [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(onTimerTick:) userInfo:nil repeats:YES];
+}
+
+-(void)getSong
+{
     /************** Backend ****************/
     PFQuery *q = [PFQuery queryWithClassName:@"Song"];
+    [q whereKey:@"publishDate" lessThan:[self getTomorrow]];
+    [q whereKey:@"publishDate" greaterThan:[self getYesterday]];
     [q getFirstObjectInBackgroundWithBlock:^(PFObject *obj, NSError *error) {
         
         /****** Get artist name ******/
@@ -67,14 +77,9 @@
             }
             else
             {
-                NZAlertView *alert = [[NZAlertView alloc] initWithStyle:NZAlertStyleError
-                                                                  title:@"Oops !"
-                                                                message:@"Something went wrong, sorry about that. Please try again."
-                                                               delegate:nil];
-                
-                [alert setTextAlignment:NSTextAlignmentCenter];
-                
-                [alert show];
+                [self alert:NZAlertStyleError
+                      title:@"No internet connection"
+                    message:@"Please connect to the internet to enjoy your Routine !"];
             }
         }];
         
@@ -83,14 +88,17 @@
         
         /****** Get track url ******/
         _urlString = obj[@"url"];
+        
+        /****** Get track url ******/
+        self.publishDate = obj[@"publishDate"];
     }];
-    
-     [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(onTimerTick:) userInfo:nil repeats:YES];
 }
-
 
 -(void)viewDidAppear:(BOOL)animated
 {
+    /************* Check for new song **********/
+    [self checkForNewSong];
+    
     /************** Liked ****************/
     if (liked == NULL)
     liked = (NSMutableArray*)[[NSMutableArray alloc] initWithArray:[[[NSUserDefaults standardUserDefaults] objectForKey:@"liked"] mutableCopy] ];
@@ -105,18 +113,38 @@
     
     reach.unreachableBlock = ^(Reachability*reach)
     {
-        NZAlertView *alert = [[NZAlertView alloc] initWithStyle:NZAlertStyleError
-                                                          title:@"No internet connection"
-                                                        message:@"Please connect to the internet to enjoy your Routine !"
-                                                       delegate:nil];
-        
-        [alert setTextAlignment:NSTextAlignmentCenter];
-        
-        [alert show];
-        
+        [self alert:NZAlertStyleError
+              title:@"No internet connection"
+            message:@"Please connect to the internet to enjoy your Routine !"];
     };
     
     [reach startNotifier];
+}
+
+-(void)checkForNewSong
+{
+    NSDate*yesterday =[self getYesterday];
+    
+    if ([self.publishDate compare:yesterday]==NSOrderedAscending)
+    {
+        [self getSong];
+    }
+}
+
+-(NSDate*)getTomorrow
+{
+    NSInteger units = NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit;
+    NSDateComponents* comps = [[NSCalendar currentCalendar] components:units fromDate:[NSDate date]];
+    comps.day++;
+    return [[NSCalendar currentCalendar] dateFromComponents:comps];
+}
+
+-(NSDate*)getYesterday
+{
+    NSInteger units = NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit;
+    NSDateComponents* comps = [[NSCalendar currentCalendar] components:units fromDate:[NSDate date]];
+    comps.day = comps.day - 2;
+    return [[NSCalendar currentCalendar] dateFromComponents:comps];
 }
 
 - (void)onTimerTick:(id)sender {
@@ -153,14 +181,9 @@
             }
             else
             {
-                NZAlertView *alert = [[NZAlertView alloc] initWithStyle:NZAlertStyleError
-                                                                  title:@"Oops !"
-                                                                message:@"Something went wrong, sorry about that. Please try again."
-                                                               delegate:nil];
-                
-                [alert setTextAlignment:NSTextAlignmentCenter];
-                
-                [alert show];
+                [self alert:NZAlertStyleError
+                      title:@"Oops !"
+                    message:@"Something went wrong, sorry about that. Please try again."];
             }
 
         }
@@ -174,6 +197,18 @@
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
+}
+
+-(void)alert:(NZAlertStyle)alertStyle title:(NSString*)title message:(NSString*)message
+{
+    NZAlertView *alert = [[NZAlertView alloc] initWithStyle:alertStyle
+                                                      title:title
+                                                    message:message
+                                                   delegate:nil];
+    
+    [alert setTextAlignment:NSTextAlignmentCenter];
+    
+    [alert show];
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
