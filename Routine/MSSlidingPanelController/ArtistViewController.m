@@ -78,4 +78,8 @@
     }
 }
 
+-(IBAction)showOnSoundcloud:(id)sender
+{
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"%@",self.urlString]];
+}
 @end

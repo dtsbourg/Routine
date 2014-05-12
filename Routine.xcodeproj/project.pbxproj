@@ -39,7 +39,6 @@
 		FC570F17190EE37800519802 /* icon-social-facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = FC570F0E190EE37800519802 /* icon-social-facebook.png */; };
 		FC570F18190EE37800519802 /* icon-social-tumblr.png in Resources */ = {isa = PBXBuildFile; fileRef = FC570F0F190EE37800519802 /* icon-social-tumblr.png */; };
 		FC570F19190EE37800519802 /* icon-social-twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = FC570F10190EE37800519802 /* icon-social-twitter.png */; };
-		FC570F1A190EE37800519802 /* wankelmut_benwolf1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FC570F11190EE37800519802 /* wankelmut_benwolf1.jpg */; };
 		FC570F20190EE3BC00519802 /* MSSlidingPanelController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC570F1D190EE3BC00519802 /* MSSlidingPanelController.m */; };
 		FC570F21190EE3BC00519802 /* MSViewControllerSlidingPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = FC570F1F190EE3BC00519802 /* MSViewControllerSlidingPanel.m */; };
 		FC570F24190EE3D000519802 /* EmptySegue.m in Sources */ = {isa = PBXBuildFile; fileRef = FC570F23190EE3D000519802 /* EmptySegue.m */; };
@@ -115,7 +114,6 @@
 		FC570F0E190EE37800519802 /* icon-social-facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-social-facebook.png"; sourceTree = "<group>"; };
 		FC570F0F190EE37800519802 /* icon-social-tumblr.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-social-tumblr.png"; sourceTree = "<group>"; };
 		FC570F10190EE37800519802 /* icon-social-twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-social-twitter.png"; sourceTree = "<group>"; };
-		FC570F11190EE37800519802 /* wankelmut_benwolf1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wankelmut_benwolf1.jpg; sourceTree = "<group>"; };
 		FC570F1C190EE3BC00519802 /* MSSlidingPanelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSSlidingPanelController.h; sourceTree = "<group>"; };
 		FC570F1D190EE3BC00519802 /* MSSlidingPanelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSSlidingPanelController.m; sourceTree = "<group>"; };
 		FC570F1E190EE3BC00519802 /* MSViewControllerSlidingPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSViewControllerSlidingPanel.h; sourceTree = "<group>"; };
@@ -275,7 +273,6 @@
 				FC570F0E190EE37800519802 /* icon-social-facebook.png */,
 				FC570F0F190EE37800519802 /* icon-social-tumblr.png */,
 				FC570F10190EE37800519802 /* icon-social-twitter.png */,
-				FC570F11190EE37800519802 /* wankelmut_benwolf1.jpg */,
 				FC570EC8190EE2C900519802 /* Routine-Info.plist */,
 				FC570EC9190EE2C900519802 /* InfoPlist.strings */,
 				FC570ECC190EE2C900519802 /* main.m */,
@@ -484,7 +481,6 @@
 				FC8B75181916C88000FABEBC /* pause.png in Resources */,
 				FC570F17190EE37800519802 /* icon-social-facebook.png in Resources */,
 				FC8B75131916C0F100FABEBC /* CODE Bold.otf in Resources */,
-				FC570F1A190EE37800519802 /* wankelmut_benwolf1.jpg in Resources */,
 				FC8B75071916AAD500FABEBC /* heart.png in Resources */,
 				FC8B75051916AA1600FABEBC /* play.png in Resources */,
 				FC8B75311917FAB900FABEBC /* pause90.png in Resources */,
