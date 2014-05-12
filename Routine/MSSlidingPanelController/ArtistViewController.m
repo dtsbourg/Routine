@@ -80,6 +80,6 @@
 
 -(IBAction)showOnSoundcloud:(id)sender
 {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"%@",self.urlString]];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",self.urlString]]];
 }
 @end

@@ -22,6 +22,7 @@
 /* Arg to pass to artist modal view */
 @property (strong, nonatomic) UIImage *artistImg;
 @property (strong, nonatomic) NSString *urlString;
+@property (strong, nonatomic) NSString *permalinkString;
     
 @property (weak, nonatomic) IBOutlet TWRProgressView *progressView;
 
@@ -89,8 +90,12 @@
         /****** Get track url ******/
         _urlString = obj[@"url"];
         
-        /****** Get track url ******/
+        /****** Get publish date ******/
         self.publishDate = obj[@"publishDate"];
+        
+        /****** Get track url ******/
+        self.permalinkString = obj[@"permalink_url"];
+        
     }];
 }
 
@@ -219,7 +224,7 @@
         destvc.artistLabel.text = [self.artistLabel.text uppercaseString];
         destvc.artistImage = _artistImg;
         destvc.detailText = artistText;
-        destvc.urlString = _urlString;
+        destvc.urlString = self.permalinkString;
     }
 }
 
