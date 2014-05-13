@@ -121,6 +121,11 @@
         [self alert:NZAlertStyleError
               title:@"No internet connection"
             message:@"Please connect to the internet to enjoy your Routine !"];
+        [self.playButton setUserInteractionEnabled:NO];
+    };
+    
+    reach.reachableBlock = ^(Reachability*reach){
+        [self.playButton setUserInteractionEnabled:YES];
     };
     
     [reach startNotifier];
